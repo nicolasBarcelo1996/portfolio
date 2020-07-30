@@ -1,0 +1,217 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Light Theme*/
+.background{
+    background-color: rgba(0, 0, 0, 0.876);
+    color: whitesmoke;
+}
+.LightTheme .background{
+    background: linear-gradient(whitesmoke, whitesmoke);
+}
+
+.LightTheme .mainHeaderDark{
+    background-image: url(./img/bgLight2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: -90px;
+   
+}
+.LightTheme .me{
+    color: black;
+    padding-bottom: 10%;
+   
+}
+.LightTheme .Info p{
+    color: black;
+}
+.LightTheme .proyectUI{
+    
+text-align: center;
+height: auto;
+padding-bottom: 100px;
+color: whitesmoke;
+
+/*background:linear-gradient(rgb(53, 52, 52),rgb(53, 53, 53), rgba(0, 0, 0, 0.849));
+*/
+}
+.LightTheme .proyectUI h2{
+    color: black;
+}
+
+.LightTheme .github{
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+
+
+/*Dark Theme*/
+
+
+a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+.mainHeaderDark{
+    background-image: url(./img/woodDark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: -90px;
+}
+.mainHeaderDark h1{
+    padding-top: 35vh;
+    font-size: 5vh;
+}
+h2{
+    font-size: 4vh;
+    padding-bottom: 25%;
+}
+h1{
+    color: lightseagreen;
+}
+p{
+    font-size: 1.2rem;
+}
+.darkHat{
+    height: 15vh;
+    position: absolute;
+    padding-top: 10%;
+}
+.darkHat:hover{
+    transform: rotate(-25deg);
+    cursor: pointer;  
+    transition: ease;
+    
+}
+.Info{
+    margin-left: 5%;
+}
+.Info p{
+    margin-right: 10%;
+}
+li img{
+    height: 7vh;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+li{
+    list-style: none;
+
+}
+
+/**  foto personal //hover in mind  **/
+.fotoPersonal{
+    border-radius: 50%;
+    height: 22vh;
+}
+
+.me{
+    text-align: center;
+    margin: 8% 0;
+}
+
+/* Projects */
+.proyectUI{
+text-align: center;
+height: auto;
+padding-bottom: 100px;
+color: black;
+/* background: linear-gradient(rgba(218, 218, 218, 0.726), rgba(128, 128, 128, 0.431), rgb(68, 68, 68));*/
+background: linear-gradient(rgba(253, 251, 251, 0.726), rgb(204, 204, 204), rgb(255, 255, 255));
+}
+.proyectUI h2{
+    padding-top: 50px;
+    padding-bottom: 140px;
+   
+}
+.proyectDiv{
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    overflow: hidden;
+}
+.proyectDiv p{
+    color: rgb(51, 51, 51);
+    font-weight: 800;
+    margin-left: 1%;
+}
+.proyect{
+height: auto;
+width: 360px;
+
+}
+.proyect:hover{
+    transform: rotateY(-180deg);
+    transition: ease-in-out;
+    transition-delay: 0.13343s;
+}
+
+.knowledgeList{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    gap: 2rem;
+}
+.knowledgeList li{
+    font-size: 1.7rem;
+}
+.github{
+    height: 3vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+
+@media (max-width: 1400px){
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5rem;
+    }
+    li p{
+        padding-right: 10%;
+    }
+    .proyectUI p{
+        margin-left: 10%;
+    }
+    .Info p{
+        margin-left: 0;
+    }
+    .LightTheme .mainHeaderDark{
+        height: auto;
+        padding-bottom: 10vh;
+    }
+    .mainHeaderDark{
+        height: auto;
+        padding-bottom: 10vh;
+    }
+    .mainHeaderDark h1{
+        font-size: 1.9rem;
+    }
+    .me{
+        margin: 8%;
+    }
+    .knowledgeList li{
+        font-size: 1.3rem;
+    }
+    .proyectUI h2{
+        padding-bottom: 50px;
+    }
+    .darkHat{
+        height: 11vh;
+        padding-top: 20vh;
+    }
+    .mainHeaderDark h2{
+        font-size: 1.5rem;
+    }
+}
